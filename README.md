@@ -116,7 +116,7 @@ M&A-Model/
 ---
 
 
-# M&A-Scenario-Model
+# SynerMerge
 
 ## Overview
 The **M&A-Scenario-Model** is a powerful tool designed for consolidating balance sheets during mergers and acquisitions (M&A). The model is built to handle complex acquisition adjustments, including goodwill creation, financing impacts, and synergy calculations. It supports multiple scenario simulations, enabling users to evaluate the financial impact of varying assumptions dynamically. This solution provides detailed insights into post-acquisition financials, empowering decision-makers with actionable data.
