@@ -1,83 +1,34 @@
-# Project Objective
+# M&A Model
+
 The M&A model consolidates balance sheets for acquiring and target companies under multiple scenarios, facilitating scenario-based sensitivity analysis and decision-making. The model integrates acquisition adjustments like goodwill creation, financing impacts, and synergies, providing a comprehensive view of post-acquisition financials. Scenario management capabilities allow users to assess various acquisition structures, financing mixes, and synergy realizations dynamically. Outputs include consolidated balance sheets, key financial metrics, and visualized insights into the impact of different assumptions.
 
-## TECHNICAL SOFTWARE SPECIFICATION
+## Installation
 
-### Project Objective:
-The objective is to build a financial model that consolidates balance sheets for M&A scenarios, enabling users to assess the impacts of different acquisition structures, financing options, synergies, and key assumptions. The model will support scenario-based sensitivity analysis and produce outputs for key metrics like combined equity value, debt levels, and financial ratios.
+To set up the project, follow these steps:
 
----
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/ma-model.git
+   ```
 
-### Requirements:
-1. **Input Data:**
-   - Separate balance sheets for the acquiring and target companies.
-   - Key M&A assumptions: purchase price, financing mix, synergies, transaction costs.
-   - Tax implications: NOL utilization, step-up depreciation/amortization.
-   - Scenario assumptions: base case, optimistic, and pessimistic scenarios.
+2. **Navigate to the project directory:**
+   ```bash
+   cd ma-model
+   ```
 
-2. **Core Features:**
-   - Automated consolidation of balance sheets for different M&A scenarios.
-   - Logic for Goodwill creation, including purchase price allocation (PPA).
-   - Financing adjustments to reflect equity and debt funding changes.
-   - Incorporation of synergies, both cost and revenue.
-   - Calculation of post-acquisition metrics, such as leverage ratio and EPS accretion/dilution.
+3. **Create a virtual environment (optional but recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-3. **Outputs:**
-   - Consolidated balance sheets under different scenarios.
-   - Key financial metrics for each scenario.
-   - Sensitivity analysis on key drivers like financing mix or synergy realization.
+4. **Install the required dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+## Project Structure
 
-### Functional Requirements:
-1. **Input Management:**
-   - User inputs are gathered through an Excel-based interface or a Python script.
-   - Scenario assumptions managed in a separate tab or JSON file.
-
-2. **Balance Sheet Consolidation Logic:**
-   - Automate the combination of assets, liabilities, and equity, ensuring intercompany eliminations.
-   - Adjustments for acquisition-specific items like transaction costs, goodwill, and financing impacts.
-
-3. **Scenario Modelling:**
-   - Implement functionality to switch between scenarios.
-   - Automatically calculate the impacts on financials based on assumptions.
-
-4. **Output Visualization:**
-   - Create summary outputs showing consolidated financial statements.
-   - Use charts for quick visualization of key metrics under each scenario.
-
-5. **Validation:**
-   - Include checks for balancing (assets = liabilities + equity).
-   - Highlight inconsistencies or errors in input data.
-
----
-
-### Technical Approach:
-1. **Language/Tools:**
-   - Use **Python** for computation and logic (Pandas for data manipulation, NumPy for calculations).
-   - Leverage **Excel** or **Google Sheets** for user-friendly input/output interface.
-   - Use libraries like `openpyxl` or `xlwings` for Python-Excel integration.
-   - Visualization with `Matplotlib` or `Plotly` for scenario comparison.
-
-2. **Data Storage:**
-   - Store base balance sheets and assumptions in `.xlsx` or `.csv` files.
-   - Maintain scenarios in structured formats (JSON or additional Excel tabs).
-
-3. **Development Plan:**
-   - Develop a Python script to load, process, and consolidate balance sheets.
-   - Build a modular structure to calculate acquisition adjustments, financing impacts, and synergies.
-   - Implement a scenario manager to facilitate switching and sensitivity analysis.
-
----
-
-
-
-
-
-
-## Repository Structure
-
-### Root Directory
 ```
 M&A-Model/
 │

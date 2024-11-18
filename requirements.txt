@@ -1,1 +1,7 @@
 # requirements.txt
+pandas
+numpy
+openpyxl
+xlwings
+matplotlib
+plotly
