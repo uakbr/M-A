@@ -1,1 +1,43 @@
 # scenarios.json
+
+{
+  "base_case": {
+    "purchase_price": 150000,
+    "financing_mix": {
+      "debt": 0.6,
+      "equity": 0.4
+    },
+    "synergies": {
+      "cost_savings": 10000,
+      "revenue_growth": 5000
+    },
+    "transaction_costs": 5000,
+    "tax_rate": 0.25
+  },
+  "optimistic_case": {
+    "purchase_price": 140000,
+    "financing_mix": {
+      "debt": 0.5,
+      "equity": 0.5
+    },
+    "synergies": {
+      "cost_savings": 15000,
+      "revenue_growth": 10000
+    },
+    "transaction_costs": 4000,
+    "tax_rate": 0.25
+  },
+  "pessimistic_case": {
+    "purchase_price": 160000,
+    "financing_mix": {
+      "debt": 0.7,
+      "equity": 0.3
+    },
+    "synergies": {
+      "cost_savings": 5000,
+      "revenue_growth": 2000
+    },
+    "transaction_costs": 6000,
+    "tax_rate": 0.25
+  }
+}
